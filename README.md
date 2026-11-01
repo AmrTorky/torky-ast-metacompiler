@@ -1,31 +1,56 @@
-# `torky-ast-metacompiler` — Backend 3: Self-Rewriting AST & 2-Sigma Shadow Sandbox Studio
-**Subtitle:** Cores 021-030 | Autonomous oslash_eps Injection & Proof-Carrying AST  
+# `torky-ast-metacompiler` — Autonomous Self-Rewriting AST Metacompiler & PCC Studio
+
+**Subtitle:** Totalized Algebra (oslash_eps, Q_bar_eps), Necula PCC Verifier & 2-Sigma Shadow Duel  
 **Author & Chief Architect:** Dr. Amr Torky  
-**Accreditation:** ISO/IEC 17025:2017 (`1dd69a153b00`) & ISO/IEC 42001:2023  
-**Permanent WORM DOIs:** CERN/Zenodo `10.5281/zenodo.1dd69a153b00` & `10.5281/zenodo.22785402`  
-**Live Interactive Mission Control:** [https://amrtorky.github.io/torky-ast-metacompiler/](https://amrtorky.github.io/torky-ast-metacompiler/)
+**Release Version:** `v5.0.0-omega` (118-Core Sovereign Upgrade)  
+**Live Interactive Studio:** [https://amrtorky.github.io/torky-ast-metacompiler/](https://amrtorky.github.io/torky-ast-metacompiler/)  
+**Internal Metrological Crosswalk Seal:** `1dd69a153b00` (ISO/IEC 17025:2017 & ISO/IEC 42001:2023 Clause-to-Record Crosswalk)  
+**WORM Ledger Anchors:** `10.5281/zenodo.1dd69a153b00` & `10.5281/zenodo.22785402`  
 
-## 1. Dedicated Separated C++20 Backend & Zero-Disclosure C ABI
-This repository compiles its own dedicated native C++20 backend (`src/dedicated_backend_engine.cpp` -> `build/dedicated_backend_engine`) and links against the stripped Zero-Disclosure C ABI library (`libgovernance_core.so`).
+---
 
-## 2. Sovereign Cores Hosted in This Repository (Part of the 118-Core AT-ACE Engine)
-| Core ID | CLI Tool Name | Core Function | User & Enterprise Benefit |
-|:---:|:---|:---|:---|
-| **#021** | `torky-ast-scan` | Static AST Singularity Scanner | Scans Python/C++/CUDA syntax trees to flag unregularized '/' divisions before compilation. |
-| **#022** | `torky-div-rewrite` | Autonomous oslash_eps AST Rewriter | Automatically rewrites BinOp(Div) nodes into non-singular oslash_epsilon(a, b) calls. |
-| **#023** | `torky-log-rewrite` | Information Potential Log Regularizer | Rewrites ln(x) -> ln(sqrt(x^2+eps)) to prevent -Inf cross-entropy loss crashes. |
-| **#024** | `torky-shadow-duel` | 2-Sigma Shadow Sandbox Duel Engine | Runs incumbent vs rewritten AST on held-out data; promotes iff improvement > 2*sigma. |
-| **#025** | `torky-pcc-cert` | Proof-Carrying Code (PCC) Verifier | Emits static certificate verifying Ring-0 Control Plane immutability and zero raw divisions. |
-| **#026** | `torky-merkle-relay` | Merkle-Relay Micro-Freeze Chain | Chains FREEZE_{n+1} = SHA256(SEAL_n || AST_{n+1} || PCC) to preserve pre-execution freeze. |
-| **#027** | `torky-inline-guard` | PyTorch/JAX/TensorRT Graph Inliner | Inlines non-singular tensor bounds into LLM attention logits and KV-caches at runtime. |
-| **#028** | `torky-branch-clamp` | Divergent Control-Flow Eliminator | Strips NaN/Inf exception branches from inner loops to unlock 100% SIMD warp vectorization. |
-| **#029** | `torky-cmov-enforce` | Branchless Predicated Instruction Gen | Lowers conditional jumps to hardware cmov/csel instructions, eliminating timing side-channels. |
-| **#030** | `torky-wasm-compile` | WebAssembly SIMD Client Exporter | Compiles verified AST trees into browser-native WASM modules for zero-install execution. |
+## 1. Domain Role & Dedicated C++20 Backend Architecture
+`torky-ast-metacompiler` operates its own dedicated C++20 hardware-aligned backend (`./build/torky-ast-metacompiler-dedicated-engine` compiled from `./src/dedicated_engine_backend.cpp` and `./include/torky_continuum_core.hpp`) alongside the controlled verification runners (`./run_audit.sh`, `./custom_input_runner.py`, and `./maria_ceos_controlled_test.py`).
 
-## 3. 30-Second Independent Terminal Reproduction
+### Custom 4-Stage Engine Roadmap
+- **STAGE 1: AST PARSE & X-RAY:** Scan Python/C++/CUDA syntax trees for '/' & ln(0) traps
+- **STAGE 2: SURGICAL REWRITE:** Inject oslash_eps & Cardano-Viete projection nodes
+- **STAGE 3: PCC STATIC PROOF:** Verify 0 raw divisions & Ring-0 Control Plane immutability
+- **STAGE 4: 2-SIGMA SHADOW DUEL:** Promote AST_{n+1} only if held-out error improves > 2*sigma
+
+### 7 Specialized Capabilities & Simulation Features in This Module
+- Totalized Continuum Algebra Ring `T_(eps, Xi_T)` (`A oslash_eps B = A B^T (B B^T + eps I)^-1/2`)
+- Universal Infinity-Quantizer Operator `Q_{bar_eps}(X) = X / (1 + bar_eps ||X||_F)` bounded at `1.02e60`
+- Orthogonal Direct-Sum AST Decomposition `T_n = K_Torky (+) M_Adaptive(alpha_n)` (Ring-0 Judge Read-Only)
+- Necula Proof-Carrying Code (PCC) Static AST Verifier blocking unregularized `/` before bytecode compile
+- Merkle-Relay Micro-Freeze Hash Chain (`FREEZE_{n+1} = SHA256(SEAL_n || AST_{n+1} || PCC_Cert)`)
+- Ephemeral-Key Anti-Goodhart Lock & `2*sigma` Held-Out Shadow Sandbox Duel
+- Branchless Predicated Instruction (`cmov`) & WebAssembly SIMD Code Emitter
+
+---
+
+## 2. Controlled Verification & Pre-Execution Governance Enforcement (CEOS & ZERO Alignment)
+To run a small, controlled test using synthetic data that demonstrates `HOLD`, `DENY`, and `ESCALATE` preventing the protected action while `PROCEED` permits it—and preserves inputs, observable execution outcomes, audit records, and actual peak memory measurements:
+
 ```bash
-git clone https://github.com/AmrTorky/torky-ast-metacompiler.git && cd torky-ast-metacompiler
-g++ -O3 -std=c++20 -march=native -Iinclude src/dedicated_backend_engine.cpp -o build/dedicated_backend_engine
-./build/dedicated_backend_engine -3.5 1.2
+cd torky-ast-metacompiler
+# 1. Run Controlled 4-State Synthetic Verification Test
+python3 ./maria_ceos_controlled_test.py --records 1000 --seed 20261101 --out-dir ./audit_artifacts
+
+# 2. Run 7-Pass Audit Script & Custom Input Runner
 ./run_audit.sh --input ./examples/sample_vectors.csv
+python3 ./custom_input_runner.py --repo torky-ast-metacompiler
+
+# 3. Compile & Execute Dedicated C++20 Backend
+g++ -O3 -std=c++20 -march=native -Wall -Wextra -Iinclude src/dedicated_engine_backend.cpp -o build/torky-ast-metacompiler-dedicated-engine
+./build/torky-ast-metacompiler-dedicated-engine --verify 0.0
 ```
+
+---
+
+## 3. Mathematical & Memory Invariants Enforced
+- **Master Scale Triple:** $l_a = e^{-1}\text{ nm} \approx 0.36787944117\text{ nm}$, $\epsilon = 0.016\text{ nm}^2$, $\Xi_{T,\text{norm}} \approx 1.02 \times 10^{60}$.
+- **Zero-Singularity Potential:** $V_{\text{finite}}(r) = \frac{1.440}{\sqrt{r^2 + 0.016}} \implies V_{\text{finite}}(0) = 11.384\text{ eV} < \infty$ (`0.00%` NaN crashes).
+- **Cardano-Viète $\mathcal{O}(1)$ Reconstruction:** $x^* = \text{sgn}(h)\frac{2}{\sqrt{3}}\cos\left(\frac{1}{3}\arccos\left(-\frac{3\sqrt{3}\epsilon h}{8}\right)\right)$.
+- **Spectral Hessian Clamp:** $\kappa(H) \le 18.50$ via dynamic Tikhonov shift $\alpha = \frac{\lambda_{\max} - 18.50\lambda_{\min}}{17.50}$.
+- **9-Byte Packed Cell (`TORKY_CELL_DTYPE`):** `96.96%` storage reduction vs. 296-byte 64-D float32 records, operating strictly below the `512 MiB` RAM ceiling.

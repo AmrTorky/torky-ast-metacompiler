@@ -62,3 +62,23 @@ g++ -O3 -std=c++20 -march=native -Wall -Wextra -Iinclude src/dedicated_engine_ba
 - **NASA OpenMCT 60-FPS Telemetry & Flight-Recorder Scrubber:** Step trajectories forward/backward (`t in [-1000, +1000]`) with `0.000000e+00` symplectic drift and test Cosmic-Ray Single-Event Upset (SEU) bit-flip recovery in `< 1 ms`.
 - **9 Scientific & Standards Communities Verified:** arXiv, CERN Zenodo, ISO/IEC (17025 & 42001), NIST, IEEE 754, ACM SIGMOD, APS, Nature Computational Science, and NASA HECC/OpenMCT.
 - **1-Click Commercial Clone SDK Exporter:** Packages `libgovernance_core.so`, C ABI headers, and Kubernetes `512Mi` manifests for `$75k` / `$250k` / `$500k+` licensing tiers with zero source code disclosure.
+
+---
+
+## 5. 6 Exclusive Engine Simulations, 3 Exclusive Features & 180-Core Mobile IDE (`torky-ast-metacompiler`)
+
+### 5.1 Six Exclusive Simulations & Experiments in This Studio
+1. **Sim 1: Live AST Division Rewriter (a/b -> oslash_eps)** (`torky-div-rewrite 0.0`): Scans Python/C++/CUDA syntax trees and replaces raw division '/' with totalized oslash_epsilon.
+2. **Sim 2: Log/Exp Singularity Rewriter & Infinity Quantizer** (`torky-log-rewrite 0.0`): Rewrites ln(0) -> ln(sqrt(r^2+eps)) and bounds divergent series via Q_{bar_eps} <= 1.02e60.
+3. **Sim 3: Necula Proof-Carrying AST Static Verifier (PCC)** (`torky-pcc-cert 1`): Verifies 0 raw divisions, Ring-0 Control Plane immutability, and 0 hardcoded fallbacks before compile.
+4. **Sim 4: Isolated 2-Sigma Held-Out Shadow Sandbox Duel** (`torky-shadow-duel 2.0`): Runs Parent Gen_n vs Child Gen_{n+1} on r=0 vectors; promotes only if improvement > 2*sigma.
+5. **Sim 5: Merkle-Relay Micro-Freeze Hash Chain** (`torky-merkle-relay 1`): Chains Freeze_{n+1} = SHA256(Seal_n || AST_{n+1} || PCC_Cert) to govern self-modifying code.
+6. **Sim 6: Branchless Predicated cmov / PTX Emitter** (`torky-cmov-enforce 1`): Eliminates warp-divergent if/else branches in GPU and CPU SIMD pipelines.
+
+### 5.2 Three Exclusive Capabilities Unique to This Engine
+- **Exclusive Feature A — Mobile & Desktop Live Self-Rewriting Code Studio**: Type or paste broken code with 1/0 bugs and watch the AST Metacompiler rewrite and run it live.
+- **Exclusive Feature B — Before/After AST Node & PCC Certificate Diff Viewer**: Displays exact transformed syntax nodes and cryptographic proof certificates.
+- **Exclusive Feature C — Ephemeral-Key Anti-Goodhart Sandbox Lock**: Encrypts held-out evaluation slices until after Freeze_{n+1} is sealed.
+
+### 5.3 New Frontier Application Domain
+- **Target Frontier**: Formally Verified Zero-Exploit Smart Contracts & Self-Healing Avionics / Spacecraft Flight Software.
